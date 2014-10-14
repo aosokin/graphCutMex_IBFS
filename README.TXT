@@ -2,6 +2,7 @@ This software implements the MATLAB wrapper for IBFS max-flow/min-cut algorithm.
 
 Anton Osokin, (firstname.lastname@gmail.com)
 29.09.2014
+https://github.com/aosokin/graphCutMex_IBFS
 
 Please cite the following paper in any resulting publication:
 
@@ -10,7 +11,7 @@ Maximum Flows by Incremental Breadth-First Search,
 In Proceedings of the 19th European conference on Algorithms, ESA'11, pages 457-468.
 http://www.cs.tau.ac.il/~sagihed/ibfs/
 
-DIFFERENCE TO BOYKOV-KOLMOGOROV algorithm (https://github.com/aosokin/graphCutMex_BoykovKolmogorov)
+DIFFERENCE TO BOYKOV-KOLMOGOROV algorithm (https://github.com/aosokin/graphCutMex_BoykovKolmogorov )
 -----------------------------
 
 The IBFS algorithm has polynomial time runtime guarantees. The BK does not.
@@ -44,4 +45,20 @@ USING THE CODE
 
 The code was tested using MSVC 2012 and MATLAB 2014a
 
+OTHER PACKAGES
+-----------------------------
 
+* BK max-flow/min-cut algorithm:
+https://github.com/aosokin/graphCutMex_BoykovKolmogorov
+
+BK-algorithm would be the most standard one to solve the graph cut problems.
+
+* BK max-flow/min-cut algorithm with interface supporting dynamic graph cuts:
+https://github.com/aosokin/graphCutDynamicMex_BoykovKolmogorov
+
+If you need to solve many similar graph cut problems in a row consider using dynamic graph cuts.
+
+* QPBO algorithm
+https://github.com/aosokin/qpboMex
+
+If you need to minimize energy with just a few non-submodular edges try using the QPBO algorithm 
