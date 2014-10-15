@@ -92,7 +92,7 @@ if ((n)->nextActive == NULL)						\
 
 
 
-template <typename captype, typename tcaptype, typename flowtype> IBFSGraph<captype, tcaptype, flowtype>::IBFSGraph(int numNodes, int numEdges, void (*errorFunctionArg)(char*))
+template <typename captype, typename tcaptype, typename flowtype> IBFSGraph<captype, tcaptype, flowtype>::IBFSGraph(int numNodes, int numEdges, void (*errorFunctionArg)(const char*))
 {
 	errorFunction = errorFunctionArg;
 	nNodes = 0;

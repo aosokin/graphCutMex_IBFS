@@ -21,7 +21,7 @@ public:
 	} termtype;
 	typedef int node_id;
 
-	IBFSGraph(int numNodes, int numEdges, void (*errorFunction)(char*) = NULL);
+	IBFSGraph(int numNodes, int numEdges, void (*errorFunction)(const char*) = NULL);
 	~IBFSGraph();
 	int add_node(int numNodes);
 	void add_edge(int nodeIndexFrom, int nodeIndexTo, captype capacity, captype reverseCapacity);
@@ -102,7 +102,7 @@ private:
 	node* activeFirst1;
 	node* activeLast1;
 
-	void (*errorFunction)(char *);
+	void (*errorFunction)(const char *);
 	int nNodes;
 
 #ifdef STATS
